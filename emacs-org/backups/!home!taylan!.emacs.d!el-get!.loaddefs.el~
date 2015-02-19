@@ -1,0 +1,273 @@
+;;; .loaddefs.el --- automatically extracted autoloads
+;;
+;;; Code:
+
+
+;;;### (autoloads (el-get el-get-self-checksum el-get-checksum el-get-make-recipes
+;;;;;;  el-get-cd el-get-reinstall el-get-remove el-get-self-update
+;;;;;;  el-get-update-packages-of-type el-get-update-all el-get-update
+;;;;;;  el-get-install el-get-version) "el-get/el-get" "el-get/el-get.el"
+;;;;;;  (21671 7005 139973 46000))
+;;; Generated autoloads from el-get/el-get.el
+
+(autoload 'el-get-version "el-get/el-get" "\
+Message the current el-get version
+
+\(fn)" t nil)
+
+(autoload 'el-get-install "el-get/el-get" "\
+Cause the named PACKAGE to be installed after all of its
+dependencies (if any).
+
+PACKAGE may be either a string or the corresponding symbol.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-update "el-get/el-get" "\
+Update PACKAGE.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-update-all "el-get/el-get" "\
+Performs update of all installed packages.
+
+\(fn &optional NO-PROMPT)" t nil)
+
+(autoload 'el-get-update-packages-of-type "el-get/el-get" "\
+Update all installed packages of type TYPE.
+
+\(fn TYPE)" t nil)
+
+(autoload 'el-get-self-update "el-get/el-get" "\
+Update el-get itself.  The standard recipe takes care of reloading the code.
+
+\(fn)" t nil)
+
+(autoload 'el-get-remove "el-get/el-get" "\
+Remove any PACKAGE that is know to be installed or required.
+
+\(fn PACKAGE &optional PACKAGE-STATUS-ALIST)" t nil)
+
+(autoload 'el-get-reinstall "el-get/el-get" "\
+Remove PACKAGE and then install it again.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-cd "el-get/el-get" "\
+Open dired in the package directory.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-make-recipes "el-get/el-get" "\
+Loop over `el-get-sources' and write a recipe file for each
+entry which is not a symbol and is not already a known recipe.
+
+\(fn &optional DIR)" t nil)
+
+(autoload 'el-get-checksum "el-get/el-get" "\
+Compute the checksum of the given package, and put it in the kill-ring
+
+\(fn PACKAGE &optional PACKAGE-STATUS-ALIST)" t nil)
+
+(autoload 'el-get-self-checksum "el-get/el-get" "\
+Compute the checksum of the running version of el-get itself.
+
+Also put the checksum in the kill-ring.
+
+\(fn)" t nil)
+
+(autoload 'el-get "el-get/el-get" "\
+Ensure that packages have been downloaded once and init them as needed.
+
+This will not update the sources by using `apt-get install' or
+`git pull', but it will ensure that:
+
+* the packages have been installed
+* load-path is set so their elisp files can be found
+* Info-directory-list is set so their info files can be found
+* Autoloads have been prepared and evaluated for each package
+* Any post-installation setup (e.g. `(require 'feature)') happens
+
+When SYNC is nil (the default), all installations run
+concurrently, in the background.
+
+When SYNC is 'sync, each package will be installed synchronously,
+and any error will stop it all.
+
+Please note that the `el-get-init' part of `el-get' is always
+done synchronously. There's `byte-compile' support though, and
+the packages you use are welcome to use `autoload' too.
+
+PACKAGES is expected to be a list of packages you want to install
+or init.  When PACKAGES is omited (the default), the list of
+already installed packages is considered.
+
+\(fn &optional SYNC &rest PACKAGES)" nil nil)
+
+;;;***
+
+;;;### (autoloads (el-get-list-packages) "el-get/el-get-list-packages"
+;;;;;;  "el-get/el-get-list-packages.el" (21671 7005 139973 46000))
+;;; Generated autoloads from el-get/el-get-list-packages.el
+
+(autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
+Display a list of packages.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (guide-key-mode) "guide-key/guide-key" "guide-key/guide-key.el"
+;;;;;;  (21671 8727 196025 747000))
+;;; Generated autoloads from guide-key/guide-key.el
+
+(defvar guide-key-mode nil "\
+Non-nil if Guide-Key mode is enabled.
+See the command `guide-key-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `guide-key-mode'.")
+
+(custom-autoload 'guide-key-mode "guide-key/guide-key" nil)
+
+(autoload 'guide-key-mode "guide-key/guide-key" "\
+Toggle guide key mode.
+
+In guide key mode, Guide following keys to an input key sequence
+automatically and dynamically.
+With a prefix argument ARG, enable guide key mode if ARG is
+positive, otherwise disable.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (popwin:messages popwin:find-file-tail popwin:find-file
+;;;;;;  popwin:popup-buffer-tail popwin:one-window popwin:universal-display
+;;;;;;  popwin:pop-to-buffer popwin:display-buffer popwin:popup-buffer)
+;;;;;;  "popwin/popwin" "popwin/popwin.el" (21671 8718 636025 485000))
+;;; Generated autoloads from popwin/popwin.el
+
+(autoload 'popwin:popup-buffer "popwin/popwin" "\
+Show BUFFER in a popup window and return the popup window. If
+NOSELECT is non-nil, the popup window will not be selected. If
+STICK is non-nil, the popup window will be stuck. If TAIL is
+non-nil, the popup window will show the last contents. Calling
+`popwin:popup-buffer' during `popwin:popup-buffer' is allowed. In
+that case, the buffer of the popup window will be replaced with
+BUFFER.
+
+\(fn BUFFER &key (width popwin:popup-window-width) (height popwin:popup-window-height) (position popwin:popup-window-position) NOSELECT DEDICATED STICK TAIL)" t nil)
+
+(autoload 'popwin:display-buffer "popwin/popwin" "\
+Display BUFFER-OR-NAME, if possible, in a popup window, or as
+usual. This function can be used as a value of
+`display-buffer-function'.
+
+\(fn BUFFER-OR-NAME &optional NOT-THIS-WINDOW)" t nil)
+
+(autoload 'popwin:pop-to-buffer "popwin/popwin" "\
+Same as `pop-to-buffer' except that this function will use
+`popwin:display-buffer-1' instead of `display-buffer'.
+
+\(fn BUFFER &optional OTHER-WINDOW NORECORD)" t nil)
+
+(autoload 'popwin:universal-display "popwin/popwin" "\
+Call the following command interactively with letting
+`popwin:special-display-config' be
+`popwin:universal-display-config'. This will be useful when
+displaying buffers in popup windows temporarily.
+
+\(fn)" t nil)
+
+(autoload 'popwin:one-window "popwin/popwin" "\
+Delete other window than the popup window. C-g restores the
+original window configuration.
+
+\(fn)" t nil)
+
+(autoload 'popwin:popup-buffer-tail "popwin/popwin" "\
+Same as `popwin:popup-buffer' except that the buffer will be
+`recenter'ed at the bottom.
+
+\(fn &rest SAME-AS-POPWIN:POPUP-BUFFER)" t nil)
+
+(autoload 'popwin:find-file "popwin/popwin" "\
+Edit file FILENAME with popup window by `popwin:popup-buffer'.
+
+\(fn FILENAME &optional WILDCARDS)" t nil)
+
+(autoload 'popwin:find-file-tail "popwin/popwin" "\
+Edit file FILENAME with popup window by
+`popwin:popup-buffer-tail'.
+
+\(fn FILE &optional WILDCARD)" t nil)
+
+(autoload 'popwin:messages "popwin/popwin" "\
+Display *Messages* buffer in a popup window.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (tabulated-list-mode) "tabulated-list/tabulated-list"
+;;;;;;  "tabulated-list/tabulated-list.el" (21671 7381 531984 565000))
+;;; Generated autoloads from tabulated-list/tabulated-list.el
+
+(autoload 'tabulated-list-mode "tabulated-list/tabulated-list" "\
+Generic major mode for browsing a list of items.
+This mode is usually not used directly; instead, other major
+modes are derived from it, using `define-derived-mode'.
+
+In this major mode, the buffer is divided into multiple columns,
+which are labelled using the header line.  Each non-empty line
+belongs to one \"entry\", and the entries can be sorted according
+to their column values.
+
+An inheriting mode should usually do the following in their body:
+
+ - Set `tabulated-list-format', specifying the column format.
+ - Set `tabulated-list-revert-hook', if the buffer contents need
+   to be specially recomputed prior to `revert-buffer'.
+ - Maybe set a `tabulated-list-entries' function (see below).
+ - Maybe set `tabulated-list-printer' (see below).
+ - Maybe set `tabulated-list-padding'.
+ - Call `tabulated-list-init-header' to initialize `header-line-format'
+   according to `tabulated-list-format'.
+
+An inheriting mode is usually accompanied by a \"list-FOO\"
+command (e.g. `list-packages', `list-processes').  This command
+creates or switches to a buffer and enables the major mode in
+that buffer.  If `tabulated-list-entries' is not a function, the
+command should initialize it to a list of entries for displaying.
+Finally, it should call `tabulated-list-print'.
+
+`tabulated-list-print' calls the printer function specified by
+`tabulated-list-printer', once for each entry.  The default
+printer is `tabulated-list-print-entry', but a mode that keeps
+data in an ewoc may instead specify a printer function (e.g., one
+that calls `ewoc-enter-last'), with `tabulated-list-print-entry'
+as the ewoc pretty-printer.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("dash/dash-functional.el" "dash/dash.el"
+;;;;;;  "el-get/el-get-autoloading.el" "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
+;;;;;;  "el-get/el-get-core.el" "el-get/el-get-custom.el" "el-get/el-get-dependencies.el"
+;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
+;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "popwin/misc/popwin-browse-kill-ring.el"
+;;;;;;  "popwin/misc/popwin-pp.el" "popwin/misc/popwin-term.el" "popwin/misc/popwin-w3m.el"
+;;;;;;  "popwin/misc/popwin-yatex.el" "s/s.el") (21671 8727 683668
+;;;;;;  955000))
+
+;;;***
+
+(provide '.loaddefs)
+;; Local Variables:
+;; version-control: never
+;; no-update-autoloads: t
+;; coding: utf-8
+;; End:
+;;; .loaddefs.el ends here

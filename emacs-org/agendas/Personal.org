@@ -1,0 +1,26 @@
+
+* Hobbies
+
+** TODO Draw a comic						   :@drawing:
+   DEADLINE: <2015-02-15 Paz> SCHEDULED: <2015-02-13 Cum>
+   :PROPERTIES:
+   :ID:       84f184c1-9be8-489e-8303-773f22523d31
+   :END:
+
+* Personal Projects
+
+** TODO Learn about org-blog			     :@programming:@projects:
+   SCHEDULED: <2015-02-12 Prş +1w>
+   :PROPERTIES:
+   :ID:       b793c028-d30e-4f51-bde1-b5b6a3397b1c
+   :END:
+
+* Some other things to do
+
+** TODO Update your CV						  :@personal:
+   DEADLINE: <2015-02-21 Cts +1m>
+   :PROPERTIES:
+   :ID:       abd61ec2-5474-41f8-8f46-5027044aa8e1
+   :END:
+
+

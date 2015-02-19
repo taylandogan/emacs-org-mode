@@ -1,0 +1,7 @@
+
+* Installation
+
+ Put the lines below to your "~/.emacs" file:
+ 
+  =;; -*- mode: elisp -*-
+(load-file "~/..(full path to your config file)../taylan.el")=

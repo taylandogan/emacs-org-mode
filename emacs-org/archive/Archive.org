@@ -1,0 +1,55 @@
+
+* Archive File. DONE tasks should be archived here.
+
+* DONE Call Volkswagen						  :@personal:
+  CLOSED: [2015-02-10 Sal 01:30] DEADLINE: <2015-01-06 Sal>
+  :PROPERTIES:
+  :ID:       7a464d92-f207-444c-b8e7-41027023dce6
+  :ARCHIVE_TIME: 2015-02-10 Sal 01:32
+  :ARCHIVE_FILE: ~/local/emacs-org/agendas/Personal.org
+  :ARCHIVE_OLPATH: Some other things to do
+  :ARCHIVE_CATEGORY: Personal
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Test for archive
+  CLOSED: [2015-02-10 Sal 01:34]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-02-10 Sal 01:34
+  :ARCHIVE_FILE: ~/local/emacs-org/agendas/Personal.org
+  :ARCHIVE_OLPATH: Some other things to do
+  :ARCHIVE_CATEGORY: Personal
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Test1 for archive
+  CLOSED: [2015-02-10 Sal 01:34]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-02-10 Sal 01:34
+  :ARCHIVE_FILE: ~/local/emacs-org/agendas/Personal.org
+  :ARCHIVE_OLPATH: Some other things to do
+  :ARCHIVE_CATEGORY: Personal
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Test related to mobile org			       :@programming:
+  CLOSED: [2015-02-10 Sal 02:31] DEADLINE: <2015-02-19 Prş>
+  :PROPERTIES:
+  :ID:       e5eb0e67-248f-49fc-b097-b96ff1005fb7
+  :ARCHIVE_TIME: 2015-02-10 Sal 02:31
+  :ARCHIVE_FILE: ~/local/emacs-org/agendas/Home.org
+  :ARCHIVE_OLPATH: Repeated Tasks
+  :ARCHIVE_CATEGORY: Home
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Test 2
+  CLOSED: [2015-02-10 Sal 02:31]
+  :PROPERTIES:
+  :ID:       13526d6b-ed3d-4cb2-be70-5795a17a4842
+  :ARCHIVE_TIME: 2015-02-10 Sal 02:31
+  :ARCHIVE_FILE: ~/local/emacs-org/agendas/Home.org
+  :ARCHIVE_OLPATH: Repeated Tasks
+  :ARCHIVE_CATEGORY: Home
+  :ARCHIVE_TODO: DONE
+  :END:
