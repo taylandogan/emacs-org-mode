@@ -7,23 +7,22 @@ In order to get into emacs org-mode easily and quickly,
 
 My folder structure:
   I put; 
-    - everything under ~/local/emacs-org.
-    - .org files into agendas folder. (~/local/emacs-org/agendas)
-    - config file under config folder. (~/local/emacs-org/config)
-    - .el files you wanna load under load folder. (~/local/emacs-org/load)
-    - backups (will be created) in backups folder. (~/local/emacs-org/backups)
+
+  - everything under ~/local/emacs-org.
+  - .org files into agendas folder. (~/local/emacs-org/agendas)
+  - config file under config folder. (~/local/emacs-org/config)
+  - .el files you wanna load under load folder. (~/local/emacs-org/load)
+  - backups (will be created) in backups folder. (~/local/emacs-org/backups)
 
 You can download emacs packages by pressing: M-x package-install <RET> (package name).
-
 Or you can list all the packages by pressing: M-x list-packages <RET>, and install packages by choosing package and clicking install button.
-
 The things you download will be stored under ~/.emacs.d/el-get
 
 If you want to use Mobile Org.
- 1- Get a Dropbox account.
- 2- Install it to your phone and your computer.
- 3- Intall MobileOrg app to your phone.
- 4- Make the necessary configurations in your config file. (mentioned in taylan.el)
+ 1. Get a Dropbox account.
+ 2. Install it to your phone and your computer.
+ 3. Intall MobileOrg app to your phone.
+ 4. Make the necessary configurations in your config file. (mentioned in taylan.el)
 
 Mobile org works like git, so use these commands for synchronization:
  - "M-x org-mobile-push" to send changes to your phone.
