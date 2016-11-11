@@ -1,6 +1,6 @@
 # emacs-org-mode
 
-In order to get into emacs org-mode easily and quickly, 
+In order to get into emacs org-mode easily, 
  - paste the .emacs file I provided under your home folder. (~/.emacs)
  - configure the things in .emacs and the config file (taylan.el) (start by renaming it). 
  - Use the folder structure I provided or change the structure and configure the config files according to your structure.
@@ -18,10 +18,10 @@ You can download emacs packages by pressing: M-x package-install <RET> (package 
 Or you can list all the packages by pressing: M-x list-packages <RET>, and install packages by choosing package and clicking install button.
 The things you download will be stored under ~/.emacs.d/el-get
 
-If you want to use Mobile Org.
+If you want to use Mobile Org:
  1. Get a Dropbox account.
- 2. Install it to your phone and your computer.
- 3. Intall MobileOrg app to your phone.
+ 2. Install Dropbox on your phone and computer.
+ 3. Install MobileOrg app on your phone.
  4. Make the necessary configurations in your config file. (mentioned in taylan.el)
 
 Mobile org works like git, so use these commands for synchronization:
